@@ -1,0 +1,11 @@
+1、 elemenet的树组件tree通过代码增加节点时必选是新对象，即在绑定的数组中增加新项时必须是新的对象，已有对象可以通过Object.assign(options, serviceData.params)进行复制
+  调用array.splice(dataIndex, 1, replacedataAssign)进行增加数据replacedataAssign时，replacedataAssign必须不是array数据中已有项，可通过Object.assign()进行复制，否则目录树不刷新
+2 CSS calc() 函数计算宽度，居中
+3 （一）assets文件夹与static文件夹的区别
+
+区别一：assets文件是src下的，所以最后运行时需要进行打包，而static文件不需要打包就直接放在最终的文件中了
+
+区别二：assets中的文件在vue中的template/style下用../这种相对路径的形式进行引用，在script下必须用@import的方式引入，
+
+              而static下的文件在.vue中的任何地方都只要使用../这种相对路径的方式引入，
+4、export default 导出的内容，import不用加括号， export 导出的则要加大括号
